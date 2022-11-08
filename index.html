@@ -8,14 +8,38 @@
     <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
-    <div>
-        <h2>ToDo</h2>
-        <form>
+    <div id="container">
+        
+        <!-- Title -->
+        <h2 id="title">ToDo</h2>
+        
+        <!-- Input Label and Box -->
+        <div id="inputArea">
+            <label>Add to your ToDo list!</label>
+            <br>
             <input id="itemInput" type="text">
-            <div id="">
-                
-            </div>
-        </form>
+        </div>
+        <br>
+        <!-- Buttons -->
+        <div id="buttons">
+            <button class="add">
+                ADD
+            </button>
+            <button class ="rmCompleted">
+                REMOVE COMPELETED TASKS
+            </button>
+            <button class="rmAll">
+                REMOVE ALL
+            </button>
+        </div>
+        <br>
+        <!-- Listed Items -->
+        <ul id="listedItems">
+            <li>
+               item 
+            </li>
+        </ul>
+
     </div>
     <script src="main.js"></script>
 </body>
