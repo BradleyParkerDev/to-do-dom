@@ -1,6 +1,7 @@
 .listItem {
     height: 30px;
-    width: 600px;
+    width: 360px;
     border: solid grey;
     transition: 2s height;
 }
+
