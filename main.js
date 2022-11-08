@@ -2,7 +2,7 @@
 // Listed Items
 //////////////////////////////////////////////////////////////
 
-// Listed Items
+// Listed Items Container
 let listContainer = document.getElementById("listContainer");
 
 
@@ -29,11 +29,8 @@ add.addEventListener('click', function(){
 
     //appends item to parent
     listContainer.appendChild(newItem);
-
     inputBox.value = '';
     console.log(`Added Item: ${newItem.innerHTML}`)
-
-
 })
 
 // Remove Completed Tasks
@@ -42,7 +39,8 @@ removeCompleted.addEventListener('click', function(){
     let completedItems = document.querySelectorAll('#listContainer .listItem')
     for(let i = 0; i < completedItems.length; i++){
         if(completedItems[i].style.textDecoration === 'line-through'){
-                    completedItems[i].remove();
+            console.log(`Completed Item: ${completedItems[i].innerHTML}`);
+            completedItems[i].remove();
         }
     }
 })
@@ -52,6 +50,7 @@ let removeAll = document.querySelector('.removeAll');
 removeAll.addEventListener('click', function(){
     let listItems = document.querySelectorAll('#listContainer .listItem')
     for(let i = 0; i < listItems.length; i++){
+        console.log(`Removed Item: ${listItems[i].innerHTML}`);
         listItems[i].remove();
     }
 })
