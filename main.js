@@ -30,10 +30,8 @@ add.addEventListener('click', function(){
         }
         else{
             newItem.style.textDecoration = '';
-        }
-        
+        } 
     })
-
     //appends item to parent
     listContainer.appendChild(newItem);
     inputBox.value = '';
