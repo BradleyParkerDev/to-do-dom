@@ -18,6 +18,7 @@ let inputBox = document.querySelector('#itemBox');
 
 // Add
 let add = document.querySelector('.add');
+add.style.backgroundColor = "#9ef416";
 add.addEventListener('click', function(){
     //creates new list item 
     let newItem = document.createElement("p");
@@ -35,6 +36,7 @@ add.addEventListener('click', function(){
 
 // Remove Completed Tasks
 let removeCompleted = document.querySelector('.removeCompleted');
+removeCompleted.style.backgroundColor = "yellow"
 removeCompleted.addEventListener('click', function(){
     let completedItems = document.querySelectorAll('#listContainer .listItem')
     for(let i = 0; i < completedItems.length; i++){
@@ -47,6 +49,7 @@ removeCompleted.addEventListener('click', function(){
 
 // Remove All 
 let removeAll = document.querySelector('.removeAll');
+removeAll.style.backgroundColor = "#f74a5f";
 removeAll.addEventListener('click', function(){
     let listItems = document.querySelectorAll('#listContainer .listItem')
     for(let i = 0; i < listItems.length; i++){
