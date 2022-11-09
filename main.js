@@ -25,7 +25,13 @@ add.addEventListener('click', function(){
     newItem.innerHTML = inputBox.value;
     newItem.className = "listItem"
     newItem.addEventListener('click',function(){
-        newItem.style.textDecoration = 'line-through';
+        if(newItem.style.textDecoration !== 'line-through'){
+            newItem.style.textDecoration = 'line-through';
+        }
+        else{
+            newItem.style.textDecoration = '';
+        }
+        
     })
 
     //appends item to parent
